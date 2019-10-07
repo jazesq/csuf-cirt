@@ -1,2 +1,2 @@
 # csuf-cirt
-CPSC 426 Project
+CPSC 362 Project
