@@ -11,7 +11,7 @@ if ENV == 'dev':
 	app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:omar@localhost/CIRT'
 else:
 	app.debug = False
-	app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://kmrqdesvahmzas:087fa5c406d8fac98cab8d0491ca28295d25f2cbcba9c060a858511001f4fa29@ec2-174-129-253-62.compute-1.amazonaws.com:5432/d6uo9a6tcdtfi3'
+	app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://zzwclbuhtrqtgs:92780220de8289e61ab53cae0872062aff64e682f3f73427cf3c1b951c6ca118@ec2-174-129-253-113.compute-1.amazonaws.com:5432/d2r7ms27gb15gs'
 	
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
