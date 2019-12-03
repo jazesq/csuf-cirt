@@ -1,30 +1,40 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-uquiv="X-UA-Compatible" content="ie=edge">
-</head>
-	<body>
-		<h1>C.I.R.T</h1>
-		<div class="container">
-			<form action="/submit" method="POST">
-				<div class="form-group">
-					<h2>Name</h2>
-					<input
-						type="text"
-						name="student"
-						placeholder="Name of Student"
-						/>
-					
-				</div>
-				<input type="submit" value="Submit" />
-			</form>
-		
-		</div>
-	</body>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="../static/style.css">
+    
+    <!-- Import JavaScript -->
+    <script src="../static/script.js" defer></script>
+    
+    <!-- Import Ionic as CDN -->
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
+    <!-- Import pages -->
+    <script src="../static/pages/campus.js"></script>
+    <script src="../static/pages/departments.js"></script>
+    <script src="../static/pages/campussafety/safetyissues.js"></script>
+    <script src="../static/pages/campussafety/bluephoneform.js"></script>
+    <script src="../static/pages/campussafety/elevatorphoneform.js"></script>
+    <script src="../static/pages/campussafety/safetyescortform.js"></script>
+    <script src="../static/pages/campussafety/addlightingform.js"></script>
+    <script src="../static/pages/campussafety/lostfoundchoices.js"></script>
+    <script src="../static/pages/campussafety/doorsecureform.js"></script>
+    <script src="../static/pages/campussafety/doorunlockform.js"></script>
+    <script src="../static/pages/campussafety/eventsecurityform.js"></script>
+    <script src="../static/pages/campussafety/feedbackform.js"></script>
+    <script src="../static/pages/clfissues.js"></script>
+  </head>  
+  <body>
+    <ion-app>
+      <ion-nav root="page-campus"></ion-nav>
+    </ion-app>
+  </body>
 </html>
-
-
