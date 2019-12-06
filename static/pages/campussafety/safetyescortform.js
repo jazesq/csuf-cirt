@@ -34,6 +34,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
+                  name = "fName"
                   oninput="handleFirstNameValue(event)"
                 ></ion-input>
               </ion-item>
@@ -45,6 +46,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
+                  name = "lName"
                   oninput="handleLastNameValue(event)"
                 ></ion-input>
               </ion-item>
@@ -56,6 +58,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="number"
+                  name = "iD"
                   oninput="handleCWIDValue(event)"
                 ></ion-input>
               </ion-item>
@@ -67,6 +70,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="tel"
+                  name = "pNum"
                   oninput="handlePhoneNumValue(event)"
                 ></ion-input>
               </ion-item>
@@ -78,6 +82,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="email"
+                  name = "eMail"
                   oninput="handleEmail(event)"
                 ></ion-input>
               </ion-item>
@@ -89,6 +94,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
+                  name = "descClothes"
                   oninput="handleClothingDescription(event)"
                 ></ion-input>
               </ion-item>
@@ -100,6 +106,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="number"
+                  name = "partySize"
                   oninput="handlePartySize(event)"
                 ></ion-input>
               </ion-item>
@@ -111,6 +118,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
+                  name = "currentLoc"
                   oninput="handleLocation(event)"
                 ></ion-input>
               </ion-item>
@@ -122,6 +130,7 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
+                  name = "destination"
                   oninput="handleDestination(event)"
                 ></ion-input>
               </ion-item>
