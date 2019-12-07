@@ -50,7 +50,7 @@ class CIRT(db.Model):
 		
 		
 
-@app.route('/',methods=['GET'])
+@app.route('/', methods=['GET'])
 def index():
 #	return app.send_static_file('index.html/')
 	return render_template('index.html')
