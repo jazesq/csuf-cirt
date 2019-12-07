@@ -4,7 +4,7 @@ from send_mail import send_mail
 
 app = Flask(__name__, static_url_path= '/static/')
 
-ENV = 'dev'
+ENV = 'prod'
 
 if ENV == 'dev':
 	app.debug = True
