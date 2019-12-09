@@ -1,0 +1,36 @@
+/* CSS files add styling rules to your content */
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+ion-header ion-toolbar {
+  --background: #00406A;
+}
+
+ion-title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: #F4F4F4;
+}
+
+ion-button {
+  --background: #F77C03;
+}
+
+ion-card-title {
+  font-size: 1rem;
+  overflow-wrap: normal;
+}
+
+ion-card ion-icon {
+  zoom: 3;
+}
+
+ion-card {
+  border: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-style: none !important;
+  position: relative;
+  text-align: center;
+}
