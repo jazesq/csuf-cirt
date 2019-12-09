@@ -1,37 +1,7 @@
-Welcome to Glitch
-=================
+Welcome to CIRT
+===============
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Welcome to Campus Issue Reporting Tool (CIRT) for California State University, Fullerton. If you identify a non-emergency issue on campus that requires attention, this tool can assist you in filing a report. Your report will then be forwarded to the appropriate department.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
-------------
-
-### ← README.md
-
-That's this file, where you can tell people what your cool website does and how you built it.
-
-### ← index.html
-
-Where you'll write the content of your website. 
-
-### ← style.css
-
-CSS files add styling rules to your content.
-
-### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-### ← assets
-
-Drag in `assets`, like images or music, to add them to your project
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+Front-end: Glitch for live preview/version control/real-time collaboration, HTML, CSS, Ionic Framework CDN for UI components, and vanilla JavaScript with Custom Elements API for web components
+Back-end: GitHub for version control, Heroku for deployment, Python with Flask framework, PostgreSQL and SQLAlchemy for relational database management, Mailtrap for email testing
