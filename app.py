@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path= '/static/')
 
 ENV = 'dev'
 
-if ENV == 'dev':
+if ENV == 'prod':
 	app.debug = True
 	app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:omar@localhost/CIRT'
 else:
