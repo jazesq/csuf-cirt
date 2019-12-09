@@ -25,7 +25,8 @@ class SafetyEscortPage extends HTMLElement {
         </ion-card>
 
           <h2>Submit a report</h2>
-          <form onsubmit="processForm(event)">
+          <form action ="/submit" method = "POST">
+          <div class = "form-group"> 
             <ion-list lines="full" class="ion-no-margin ion-no-padding">
               <ion-item>
                 <ion-label position="stacked">
@@ -35,7 +36,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="text"
                   name = "fName"
-                  oninput="handleFirstNameValue(event)"
+                  
                 ></ion-input>
               </ion-item>
 
@@ -47,7 +48,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="text"
                   name = "lName"
-                  oninput="handleLastNameValue(event)"
+                  
                 ></ion-input>
               </ion-item>
 
@@ -59,7 +60,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="number"
                   name = "iD"
-                  oninput="handleCWIDValue(event)"
+                  
                 ></ion-input>
               </ion-item>
 
@@ -71,7 +72,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="tel"
                   name = "pNum"
-                  oninput="handlePhoneNumValue(event)"
+                 
                 ></ion-input>
               </ion-item>
 
@@ -83,7 +84,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="email"
                   name = "eMail"
-                  oninput="handleEmail(event)"
+                  
                 ></ion-input>
               </ion-item>
               
@@ -95,7 +96,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="text"
                   name = "descClothes"
-                  oninput="handleClothingDescription(event)"
+                  
                 ></ion-input>
               </ion-item>
           
@@ -107,7 +108,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="number"
                   name = "partySize"
-                  oninput="handlePartySize(event)"
+                  
                 ></ion-input>
               </ion-item>
 
@@ -119,7 +120,7 @@ class SafetyEscortPage extends HTMLElement {
                   required
                   type="text"
                   name = "currentLoc"
-                  oninput="handleLocation(event)"
+                  
                 ></ion-input>
               </ion-item>
 
@@ -127,13 +128,18 @@ class SafetyEscortPage extends HTMLElement {
                 <ion-label position="stacked">
                   Destination <ion-text color="danger">*</ion-text>
                 </ion-label>
-                <ion-input
-                  required
-                  type="text"
-                  name = "destination"
-                  oninput="handleDestination(event)"
-                ></ion-input>
+                
+                
+					<ion-input
+					required
+					type="text"
+					name = "destination"
+                
+					></ion-input>
+					
+					
               </ion-item>
+              </div>
 
             <ion-button 
               color="primary" 

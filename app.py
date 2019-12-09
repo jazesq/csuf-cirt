@@ -4,7 +4,7 @@ from send_mail import send_mail
 
 app = Flask(__name__, static_url_path= '/static/')
 
-ENV = 'prod'
+ENV = 'dev'
 
 if ENV == 'dev':
 	app.debug = True
@@ -50,7 +50,7 @@ class CIRT(db.Model):
 		
 		
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
 #	return app.send_static_file('index.html/')
 	return render_template('index.html')
@@ -60,21 +60,21 @@ def index():
 	
 
 	
-@app.route('/onsubmit', methods=['POST'])
-def onsubmit():
-#	if request.method == 'POST':
-	fName = request.form['fName']
-	lName = request.form['lName']
-	cWID = request.form['iD']
-	pNum = request.form['pNum']
-	eMail = request.form['eMail']
-	descClothes = request.form['descClothes']
-	partySize = request.form['partySize']
-	currentLoc = request.form['currentLoc']
-	destination = request.form['destination']
-	#	print(cWid)
-	if cWID == '':
-		return render_template('index.html')
+@app.route('/submit', methods=['POST'])
+def submit():
+	if request.method == 'POST':
+		fName = request.form['fName']
+		lName = request.form['lName']
+		cWID = request.form['iD']
+		pNum = request.form['pNum']
+		eMail = request.form['eMail']
+		descClothes = request.form['descClothes']
+		partySize = request.form['partySize']
+		currentLoc = request.form['currentLoc']
+		destination = request.form['destination']
+		print("Hey its Jazmin")
+	#if cWID == '':
+		#return render_template('index.html')
 			
 		# if db.session.query(CIRT).filter(CIRT.cWid == cWid).count() == 0: #change logical statement for error checking
 			# data = CIRT(fName, lName, cWID, pNum, eMail, descClothes, partySize, currentLoc, destination) #add more than student for more data
