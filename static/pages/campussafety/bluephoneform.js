@@ -21,7 +21,7 @@ class BluephoneFormPage extends HTMLElement {
 
           <h2>Report Broken Bluephone</h2>
       
-          <form onsubmit="processBluephoneForm(event)">
+          <form>
             <ion-list lines="full" class="ion-no-margin ion-no-padding">
               <ion-item>
                 <ion-label position="stacked">
@@ -30,7 +30,6 @@ class BluephoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleFirstNameValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -41,7 +40,6 @@ class BluephoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleLastNameValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -52,7 +50,6 @@ class BluephoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="number"
-                  oninput="handleCWIDValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -63,7 +60,6 @@ class BluephoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="tel"
-                  oninput="handlePhoneNumValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -74,7 +70,6 @@ class BluephoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="email"
-                  oninput="handleEmail(event)"
                 ></ion-input>
               </ion-item>
               
@@ -85,7 +80,6 @@ class BluephoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="number"
-                  oninput="handleBluephoneNumber(event)"
                 ></ion-input>
               </ion-item>
 
@@ -131,15 +125,12 @@ class BluephoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleComment(event)"
                 ></ion-input>
               </ion-item>
 
            <ion-button 
             color="primary" 
-            expand="block" 
-            [disabled]="!BluephoneForm.valid" 
-            (click)="submitBluephoneForm()">Submit
+            expand="block">Submit
           </ion-button>
       
         <ion-footer>
