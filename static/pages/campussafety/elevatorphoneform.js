@@ -20,7 +20,8 @@ class ElevatorPhoneFormPage extends HTMLElement {
           </ion-card-header>
 
           <h2>Report Broken Elevator Phone</h2>
-          <form onsubmit="processElevatorPhoneForm(event)">
+          <form action="/submit" method="POST">
+            <div class="form-group"> 
             <ion-list lines="full" class="ion-no-margin ion-no-padding">
               <ion-item>
                 <ion-label position="stacked">
@@ -29,7 +30,6 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleFirstNameValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -40,7 +40,6 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleLastNameValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -51,7 +50,6 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="number"
-                  oninput="handleCWIDValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -62,7 +60,6 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="tel"
-                  oninput="handlePhoneNumValue(event)"
                 ></ion-input>
               </ion-item>
 
@@ -73,7 +70,6 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="email"
-                  oninput="handleEmail(event)"
                 ></ion-input>
               </ion-item>
               
@@ -84,7 +80,7 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleBuilding(event)"></ion-input>
+                 ></ion-input>
                 </ion-item>
 
                 <ion-item>
@@ -94,10 +90,8 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleElevatorNum(event)"
                 ></ion-input>
               </ion-item>
-
 
         <ion-list>
           <ion-list-header><ion-label position="stacked">
@@ -133,17 +127,16 @@ class ElevatorPhoneFormPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleComment(event)"
                 ></ion-input>
               </ion-item>
 
+            </div>
            <ion-button 
             color="primary" 
-            expand="block" 
-            [disabled]="!ElevatorPhoneForm.valid" 
-            (click)="submitElevatorPhoneForm()">Submit
+            expand="block">Submit
           </ion-button>
-      
+          </form>      
+
         <ion-footer>
           <ion-toolbar>     
             <ion-buttons slot="start">
