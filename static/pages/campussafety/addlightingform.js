@@ -23,40 +23,43 @@ class AddLightingPage extends HTMLElement {
       Please provide a brief description of the location where more safety lighting is needed.
         </ion-card>
           
-          <ion-item>
-                <ion-label position="stacked">
-                Description <ion-text color="danger">*</ion-text>
-                </ion-label>
-                <ion-input
-                  required
-                  type="text"
-                ></ion-input>
+          <form action="/submit" method="POST">
+          <div class="form-group"> 
+            <ion-item>
+                  <ion-label position="stacked">
+                  Description <ion-text color="danger">*</ion-text>
+                  </ion-label>
+                  <ion-input
+                    required
+                    type="text"
+                  ></ion-input>
+                </ion-item>
+
+              <ion-item>
+                <ion-label position="stacked">Date<ion-text color="danger">*</ion-text></ion-label>
+                <ion-datetime placeholder="Date noticed"></ion-datetime>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="stacked">Time<ion-text color="danger">*</ion-text></ion-label>
+                <ion-datetime placeholder="Time noticed" display-format="h:mm A" picker-format="h:mm A"></ion-datetime>
               </ion-item>
 
             <ion-item>
-              <ion-label position="stacked">Date<ion-text color="danger">*</ion-text></ion-label>
-              <ion-datetime placeholder="Date noticed"></ion-datetime>
-            </ion-item>
-
-            <ion-item>
-              <ion-label position="stacked">Time<ion-text color="danger">*</ion-text></ion-label>
-              <ion-datetime placeholder="Time noticed" display-format="h:mm A" picker-format="h:mm A"></ion-datetime>
-            </ion-item>
-
-          <ion-item>
-                <ion-label position="stacked">
-                Additional Comments <ion-text color="medium">(optional)</ion-text>
-                </ion-label>
-                <ion-input
-                  required
-                  type="text"
-                ></ion-input>
-              </ion-item>
-
+                  <ion-label position="stacked">
+                  Additional Comments <ion-text color="medium">(optional)</ion-text>
+                  </ion-label>
+                  <ion-input
+                    required
+                    type="text"
+                  ></ion-input>
+                </ion-item>
+          </div>
            <ion-button 
             color="primary" 
             expand="block">Submit
           </ion-button>
+        </form>
 
         <ion-footer>
           <ion-toolbar>     
