@@ -23,8 +23,8 @@ class FeedbackChoicesPage extends HTMLElement {
            We are constantly looking for ways to improve campus safety. Your feedback helps us know what we are doing right or what can be improved. All feedback is anonymous. Thank you for helping us ensure a safe campus community!
         </ion-card>
     
-<form action ="/submit" method = "POST">
-            <div class = "form-group">
+        <form action="/submit" method="POST">
+            <div class="form-group">
             <ion-item>
                 <ion-label position="stacked">
                   Feedback <ion-text color="danger">*</ion-text>
@@ -32,18 +32,19 @@ class FeedbackChoicesPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  name = "feedback"
+                  name="feedback"
                 ></ion-input>
               </ion-item>
+            </div>
 
           <ion-nav-push component="page-campussafety-confirmation">
             <ion-button 
               color="primary" 
               expand="block"
-              type = "submit"
+              type="submit"
               >Submit</ion-button>
           </ion-nav-push>
-
+         </form>
 </br>
 <b><center><em>In case of emergency, call <a href="tel:911">911</a></em></center></b>
 </br>
