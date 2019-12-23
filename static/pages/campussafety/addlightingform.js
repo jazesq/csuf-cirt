@@ -30,7 +30,6 @@ class AddLightingPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleDescription(event)"
                 ></ion-input>
               </ion-item>
 
@@ -51,15 +50,12 @@ class AddLightingPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  oninput="handleComment(event)"
                 ></ion-input>
               </ion-item>
 
            <ion-button 
             color="primary" 
-            expand="block" 
-            [disabled]="!LightingForm.valid" 
-            (click)="submitLightingForm()">Submit
+            expand="block">Submit
           </ion-button>
 
         <ion-footer>
