@@ -21,10 +21,10 @@ class DoorUnlockPage extends HTMLElement {
 
           <h2>Request for Door Unlock</h2>
            The requesting party must be present when the officer arrives. Please have your room permit and valid form of ID ready. If the name on your ID does not match the name on the room permit, access may not be granted. If you are requesting for an exterior door to be unlocked, please specify this and describe its location under "additional comments".
-        </ion-card>
+          </ion-card>
 
-<form action ="/submit" method = "POST">
-            <div class = "form-group">
+          <form action="/submit" method="POST">
+            <div class="form-group">
             <ion-list lines="full" class="ion-no-margin ion-no-padding">
               <ion-item>
                 <ion-label position="stacked">
@@ -33,7 +33,7 @@ class DoorUnlockPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  name = "fName"
+                  name="fName"
                 ></ion-input>
               </ion-item>
 
@@ -44,7 +44,7 @@ class DoorUnlockPage extends HTMLElement {
                 <ion-input
                   required
                   type="text"
-                  name = "lName"
+                  name="lName"
                 ></ion-input>
               </ion-item>
 
@@ -111,7 +111,7 @@ class DoorUnlockPage extends HTMLElement {
                   name = "addComments"
                 ></ion-input>
               </ion-item>
-
+             </div>
 
           <ion-nav-push component="page-campussafety-confirmation">
             <ion-button 
@@ -120,7 +120,7 @@ class DoorUnlockPage extends HTMLElement {
               type = "submit"
               >Submit</ion-button>
           </ion-nav-push>
-
+          </form>
 </br>
 <b><center><em>In case of emergency, call <a href="tel:911">911</a></em></center></b>
 </br>
