@@ -21,7 +21,8 @@ class BluephoneFormPage extends HTMLElement {
 
           <h2>Report Broken Bluephone</h2>
       
-          <form>
+          <form action="/submit" method="POST">
+          <div class="form-group"> 
             <ion-list lines="full" class="ion-no-margin ion-no-padding">
               <ion-item>
                 <ion-label position="stacked">
@@ -127,11 +128,13 @@ class BluephoneFormPage extends HTMLElement {
                   type="text"
                 ></ion-input>
               </ion-item>
+           </div>
 
            <ion-button 
             color="primary" 
             expand="block">Submit
           </ion-button>
+        </form>
       
         <ion-footer>
           <ion-toolbar>     
